@@ -43,6 +43,14 @@ body {
   font-weight: 550;
 }
 
+#coba .coba1 {
+  background-color: #16a085;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  width: 20rem;
+}
+
 .features h3,
 .designer h3,
 .similar-product h3,
