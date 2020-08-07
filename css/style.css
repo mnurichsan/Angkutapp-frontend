@@ -247,3 +247,23 @@ html,body {
 }
 }
 /* -----------------------------------------end page------------------------------------------------------- */
+
+/* content */
+
+.card-deck{
+    margin-top: 20px;
+}
+.card-deck .card{
+    border-radius: 25px;
+    height: 13rem;
+}
+
+.content h2,p{
+  color: var(--green);
+}
+.content .isuLainnya{
+  
+border-left: 2px solid var(--green);
+  
+padding-left: 2rem;
+}
