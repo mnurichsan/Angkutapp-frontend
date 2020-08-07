@@ -1,6 +1,21 @@
-body {
-  font-family: "Montserrat";
+/* css reset */
+*{
+  box-sizing : border-box;
 }
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+:root{
+
+  --green : #16a085;
+
+}
+
+/* end css reset */
 
 .navbar {
   background-color: #16a085;
@@ -159,3 +174,76 @@ body {
 .footer {
   background-color: #16a085;
 }
+
+
+/* --------------------------------------page pusat bantuan----------------------------------------------- */
+
+.jumbotron{
+  margin-top:100px;
+  background: white;
+}
+.jumbotron p{
+  font-size:18px;
+  color : var(--green);
+}
+.jumbotron .form-group {
+  margin:-10px auto;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.form-group .form-input::-webkit-input-placeholder{
+  color:var(--green);
+}
+
+.form-group .form-input:-moz-input-placeholder{
+  color: var(--green)
+}
+
+.form-group .form-input {
+  padding: 6.7px;
+  width: 18rem;
+  font-size: 14px;
+  color: var(--green);
+  border-radius: 10px;
+  background: unset;
+  border: unset;
+  outline: unset;
+}
+
+.form-group .search-btn {
+  background: unset;
+  border: unset;
+  outline: unset;
+  cursor: pointer;
+}
+
+.search-btn .fa-search {
+  font-size: 22px;
+  padding-right: 5px;
+  color: var(--green);
+  margin-top:5px;
+}
+
+.search-btn .fa-search:hover {
+  color: darkgreen;
+}
+@media (min-width: 768px) { 
+  .jumbotron{
+    margin-top:60px;
+    background: white;
+  } 
+ }
+@media (min-width: 992px) { 
+  .jumbotron{
+  margin-top:60px;
+  background: white;
+} 
+.jumbotron p{
+  font-size:24px;
+}
+.form-group .form-input {
+  font-size:16px;
+}
+}
+/* -----------------------------------------end page------------------------------------------------------- */
