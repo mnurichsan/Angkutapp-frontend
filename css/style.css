@@ -270,7 +270,7 @@ html,body {
 /* bantuan */
 .bantuan{
   background: var(--green);
-  padding: 15px;
+  padding: 35px;
 }
 
 .bantuan .input input{
@@ -279,10 +279,40 @@ html,body {
 
 .bantuan h1{
   color: white;
-  font-size: 27px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: -18px;
 }
 .bantuan h5{
   color: white;
+  font-size: 19px;
+}
+
+.tutor img{
+  width: 149px;
+  height: 249px;
+  padding-left: 13px;
+}
+
+/* alamat */
+.alamat-cabang picture img{
+  width: 10rem !important;
+  margin-left: 63px;
+}
+
+.alamat-cabang h1{
+  color: var(--green);
+  font-size: 27px;
+  font-weight: 600;
+}
+.alamat-cabang hr{
+  border:1px solid var(--green);
+  transform: translateY(-13px);
+  width: 28rem;
+}
+.alamat-cabang p{
+  color: var(--green);
+
 }
 
 
@@ -328,6 +358,9 @@ html,body {
 }
 
 /* bantuan personal */
+.bantuan h1{
+  font-size: 27px;
+}
 .b-tutor{
   border-left:1px solid white;
   margin-left: 90px;

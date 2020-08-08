@@ -11,6 +11,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
 
+    <!-- owlCarousel -->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.css" />
 
@@ -146,8 +150,8 @@
         <h1 class="text-center">Bantuan Personal</h1>
       </div>
     </div>
-    <div class="row mt-4">
-      <div class="col-md-4 offset-1">
+    <div class="row mt-2">
+      <div class="col-md-4 mx-auto pesan">
         <h5 class="text-center">Melalui Pesan Web</h5>
         <form action="" method="POST">
           <div class="form-group">
@@ -180,11 +184,81 @@
   </div>
 </section>
 
+<section class="alamat-cabang mt-4">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <h1 class="text-center">Beberapa Alamat Kantor Cabang</h1>
+              <hr>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <picture>
+                    <img src="img/ss.PNG" alt="" class="img-fluid">
+                  </picture>
+                  <p class="text-center">Pangkep</p>
+                </div>
+                <div class="item">
+                  <picture>
+                    <img src="img/ss.PNG" alt="" class="img-fluid">
+                  </picture>
+                  <p class="text-center">Maros</p>
+                </div>
+                <div class="item">
+                  <picture>
+                    <img src="img/ss.PNG" alt="" class="img-fluid">
+                  </picture>
+                  <p class="text-center">Makassar</p>
+                </div>
+                <div class="item">
+                  <picture>
+                    <img src="img/ss.PNG" alt="" class="img-fluid">
+                  </picture>
+                  <p class="text-center">Gowa</p>
+                </div>
+                <div class="item">
+                  <picture>
+                    <img src="img/ss.PNG" alt="" class="img-fluid">
+                  </picture>
+                  <p class="text-center">Pare-Pare</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/all.js"></script>
+<script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                400: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
 </body>
 </html>
