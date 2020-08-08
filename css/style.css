@@ -183,7 +183,7 @@ html,body {
   background: white;
 }
 .jumbotron p{
-  font-size:18px;
+  font-size:20px;
   color : var(--green);
 }
 .jumbotron .form-group {
@@ -228,6 +228,64 @@ html,body {
 .search-btn .fa-search:hover {
   color: darkgreen;
 }
+
+/* -----------------------------------------end page------------------------------------------------------- */
+
+/* content */
+.content{
+  margin-top:-20px;
+}
+.card-deck{
+    margin-top: 20px;
+    margin-right: 3rem;
+}
+.card-deck .card{
+    border-radius: 25px;
+    height: 13rem;
+}
+
+.content h2{
+  font-size: 18px;
+  color:var(--green);
+  font-weight: 600;
+}
+.content .card-body p{
+  color: rgba(0,0,0,0.7);
+  font-size: 15px;
+  font-weight: bold;
+
+}
+.content .isuLainnya{
+  margin-top: 2rem;
+  border-left: 2px solid var(--green);
+  padding-left: 2rem;
+}
+
+.content .isuLainnya p{
+  color: rgba(0,0,0,0.7);
+  font-size: 15px;
+
+}
+
+/* bantuan */
+.bantuan{
+  background: var(--green);
+  padding: 15px;
+}
+
+.bantuan .input input{
+  width: 15rem;
+}
+
+.bantuan h1{
+  color: white;
+  font-size: 27px;
+}
+.bantuan h5{
+  color: white;
+}
+
+
 @media (min-width: 768px) { 
   .jumbotron{
     margin-top:60px;
@@ -245,25 +303,52 @@ html,body {
 .form-group .form-input {
   font-size:16px;
 }
-}
-/* -----------------------------------------end page------------------------------------------------------- */
 
 /* content */
-
-.card-deck{
-    margin-top: 20px;
+.content{
+  margin-top: -38px;
 }
-.card-deck .card{
-    border-radius: 25px;
-    height: 13rem;
+.content .card-deck{
+  margin-top: 20px;
+  margin-right: 3rem;
 }
 
-.content h2,p{
-  color: var(--green);
+.content h2{
+  font-size: 22px;
+  font-weight: 600;
+}
+.content p{
+  font-size: 15px;
 }
 .content .isuLainnya{
-  
-border-left: 2px solid var(--green);
-  
-padding-left: 2rem;
+  margin-top:6px;
+  margin-left: -50px;
+  border-left: 2px solid var(--green);
+  padding-left: 2rem;
+}
+
+/* bantuan personal */
+.b-tutor{
+  border-left:1px solid white;
+  margin-left: 90px;
+}
+
+.bantuan form{
+  background-color:#043;
+  padding: 20px;
+  border-radius:12px;
+  width: 26rem;
+  margin-left: -34px;
+}
+
+.bantuan .form-group input{height: 29px;}
+.tutor{margin-left: 15px;padding-left: 20px;}
+
+.tutor img{
+  width: 149px;
+  height: 249px;
+  padding-left: 13px;
+}
+
+
 }
