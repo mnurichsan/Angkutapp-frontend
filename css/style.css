@@ -382,7 +382,61 @@ section.pilar-angkut{
   font-size: 15px;
 }
 
+.testimonial {
+  margin-top: 50px;
+}
 
+
+.testimonial h1{
+  color:var(--green);
+  font-size : 20px;
+  font-weight: 600;
+}
+.testimonial hr{
+  border:1px solid var(--green);
+  width :120px;
+}
+
+
+.testimonial .card {
+  width: 18rem;
+  height: 20rem;
+  margin: 40px auto;
+  border-radius: 0px 40px;
+  background-color: var(--green);
+}
+
+.card .user-img img {
+  width: 10rem;
+  height: 9rem;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+.card .card-body h2 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  margin-top: -15px;
+}
+
+.card .card-body h3 {
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+.card .card-body hr {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: -1px;
+}
+
+.card .card-body p {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
 
 /* akhir halaman utama */
 
@@ -395,6 +449,9 @@ section.pilar-angkut{
 @media (min-width: 992px) {
 
   /* hlmnUtama */
+  .layanan h1{
+    font-size : 25px;
+  }
 
   .layanan picture{
     padding-top: 20px;
@@ -425,6 +482,10 @@ section.pilar-angkut{
 
 .pilar-angkut img{
   margin-top:20px;
+}
+
+.testimonial h1{
+    font-size : 25px;
 }
 
   /* akhir */
