@@ -311,74 +311,69 @@ body {
 }
 
 /* halaman utama */
-header .jumbotron{
-  background: var(--green);
-  
+
+section.layanan {
+  margin-top: 20px;
 }
 
-section.layanan{
-  margin-top:20px;
+.layanan .container {
+  padding-top: 20px;
 }
 
-.layanan .container{
-  padding-top:20px;
-}
-
-.layanan h1{
-  color:var(--green);
-  font-size : 20px;
+.layanan h1 {
+  color: var(--green);
+  font-size: 20px;
   font-weight: 600;
 }
-.layanan hr{
-  border:1px solid var(--green);
-  width :120px;
+.layanan hr {
+  border: 1px solid var(--green);
+  width: 120px;
 }
 
-.layanan picture{
-padding-top: 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
+.layanan picture {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.layanan img{
- width : 250px;
- height: 165px;
+.layanan img {
+  width: 250px;
+  height: 165px;
   margin-bottom: 20px;
   border-radius: 20px;
 }
 
-section.pilar-angkut{
+section.pilar-angkut {
   margin-top: 35px;
-  background: var(--green);
-  padding:25px;
+  padding: 25px;
 }
 
-.pilar-angkut h1{
-  color: white;
-  font-size : 20px;
+.pilar-angkut h1 {
+  color: var(--green);
+  font-size: 20px;
   font-weight: 600;
 }
-.pilar-angkut hr{
-  border:1px solid white;
-  width :120px;
+.pilar-angkut hr {
+  border: 1px solid #16a085;
+  width: 120px;
 }
 
-.pilar-angkut img{
+.pilar-angkut img {
   width: 172px;
   height: 134px;
   border-radius: 50%;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
-.pilar-angkut h4{
-  color:white;
-  padding-top:20px;
+.pilar-angkut h4 {
+  color: var(--green);
+  padding-top: 20px;
   font-weight: 600;
 }
 
-.pilar-angkut p{
-  color:white;
+.pilar-angkut p {
+  color: var(--green);
   font-size: 15px;
 }
 
@@ -386,55 +381,57 @@ section.pilar-angkut{
   margin-top: 50px;
 }
 
-
-.testimonial h1{
-  color:var(--green);
-  font-size : 20px;
+.testimonial h1 {
+  color: var(--green);
+  font-size: 20px;
   font-weight: 600;
 }
-.testimonial hr{
-  border:1px solid var(--green);
-  width :120px;
+.testimonial hr {
+  border: 1px solid var(--green);
+  width: 120px;
 }
-
 
 .testimonial .card {
   width: 18rem;
-  height: 20rem;
   margin: 40px auto;
-  border-radius: 0px 40px;
-  background-color: var(--green);
+  border: 2px solid #16a085;
 }
 
-.card .user-img img {
-  width: 10rem;
-  height: 9rem;
+.testimonial .card .user-img img {
+  max-width: 120px;
+  height: 7rem;
+  position: absolute;
   margin: 10px auto;
+  top: -50px;
+  left: 34%;
   border-radius: 50%;
+  border: 3px solid #16a085;
+  -webkit-transform: translate(-10%, 0%);
+  transform: translate(-10%, 0%);
 }
 
-.card .card-body h2 {
-  color: white;
+.testimonial .card .card-body h2 {
+  color: #16a085;
   text-align: center;
   font-size: 25px;
-  margin-top: -15px;
+  margin-top: 80px;
 }
 
-.card .card-body h3 {
+.testimonial .card .card-body h3 {
   font-weight: 300;
   font-size: 14px;
   text-align: center;
-  color: white;
+  color: #16a085;
 }
 
-.card .card-body hr {
+.testimonial .card .card-body hr {
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: -1px;
 }
 
-.card .card-body p {
+.testimonial .card .card-body p {
   text-align: center;
-  color: white;
+  color: #16a085;
   font-size: 12px;
 }
 
@@ -447,46 +444,45 @@ section.pilar-angkut{
   }
 }
 @media (min-width: 992px) {
-
   /* hlmnUtama */
-  .layanan h1{
-    font-size : 25px;
+  .layanan h1 {
+    font-size: 25px;
   }
 
-  .layanan picture{
+  .layanan picture {
     padding-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
 
-  .layanan img{
+  .layanan img {
     width: 220px;
     height: 160px;
     margin-bottom: 20px;
     border-radius: 20px;
   }
 
-  .pilar-angkut h1{
-  font-size : 25px;
-}
+  .pilar-angkut h1 {
+    font-size: 25px;
+  }
 
-.pilar-angkut h4{
-  font-size:20px;
-}
+  .pilar-angkut h4 {
+    font-size: 20px;
+  }
 
-.pilar-angkut p{
-  font-size: 14px;
-  font-weight: 400;
-}
+  .pilar-angkut p {
+    font-size: 14px;
+    font-weight: 400;
+  }
 
-.pilar-angkut img{
-  margin-top:20px;
-}
+  .pilar-angkut img {
+    margin-top: 20px;
+  }
 
-.testimonial h1{
-    font-size : 25px;
-}
+  .testimonial h1 {
+    font-size: 25px;
+  }
 
   /* akhir */
   .jumbotron {
@@ -597,7 +593,6 @@ section.pilar-angkut{
 
 .jumbotron-post .search-btn .fa-search {
   font-size: 22px;
-  padding-right: 5px;
   color: var(--green);
   margin-top: 5px;
 }
