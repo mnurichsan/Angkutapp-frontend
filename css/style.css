@@ -1,6 +1,21 @@
-body {
-  font-family: "Montserrat";
+/* css reset */
+*{
+  box-sizing : border-box;
 }
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+
+  --green : #16a085;
+
+}
+
+/* end css reset */
 
 .navbar {
   background-color: #16a085;
@@ -158,4 +173,215 @@ body {
 
 .footer {
   background-color: #16a085;
+}
+
+
+/* --------------------------------------page pusat bantuan----------------------------------------------- */
+
+.jumbotron{
+  margin-top:100px;
+  background: white;
+}
+.jumbotron p{
+  font-size:20px;
+  color : var(--green);
+}
+.jumbotron .form-group {
+  margin:-10px auto;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.form-group .form-input::-webkit-input-placeholder{
+  color:var(--green);
+}
+
+.form-group .form-input:-moz-input-placeholder{
+  color: var(--green)
+}
+
+.form-group .form-input {
+  padding: 6.7px;
+  width: 18rem;
+  font-size: 14px;
+  color: var(--green);
+  border-radius: 10px;
+  background: unset;
+  border: unset;
+  outline: unset;
+}
+
+.form-group .search-btn {
+  background: unset;
+  border: unset;
+  outline: unset;
+  cursor: pointer;
+}
+
+.search-btn .fa-search {
+  font-size: 22px;
+  padding-right: 5px;
+  color: var(--green);
+  margin-top:5px;
+}
+
+.search-btn .fa-search:hover {
+  color: darkgreen;
+}
+
+/* -----------------------------------------end page------------------------------------------------------- */
+
+/* content */
+.content{
+  margin-top:-20px;
+}
+.card-deck{
+    margin-top: 20px;
+    margin-right: 3rem;
+}
+.card-deck .card{
+    border-radius: 25px;
+    height: 13rem;
+}
+
+.content h2{
+  font-size: 18px;
+  color:var(--green);
+  font-weight: 600;
+}
+.content .card-body p{
+  color: rgba(0,0,0,0.7);
+  font-size: 15px;
+  font-weight: bold;
+
+}
+.content .isuLainnya{
+  margin-top: 2rem;
+  border-left: 2px solid var(--green);
+  padding-left: 2rem;
+}
+
+.content .isuLainnya p{
+  color: rgba(0,0,0,0.7);
+  font-size: 15px;
+
+}
+
+/* bantuan */
+.bantuan{
+  background: var(--green);
+  padding: 35px;
+}
+
+.bantuan .input input{
+  width: 15rem;
+}
+
+.bantuan h1{
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: -18px;
+}
+.bantuan h5{
+  color: white;
+  font-size: 19px;
+}
+
+.tutor img{
+  width: 149px;
+  height: 249px;
+  padding-left: 13px;
+}
+
+/* alamat */
+.alamat-cabang picture img{
+  width: 10rem !important;
+  margin-left: 63px;
+}
+
+.alamat-cabang h1{
+  color: var(--green);
+  font-size: 27px;
+  font-weight: 600;
+}
+.alamat-cabang hr{
+  border:1px solid var(--green);
+  transform: translateY(-13px);
+  width: 28rem;
+}
+.alamat-cabang p{
+  color: var(--green);
+
+}
+
+
+@media (min-width: 768px) { 
+  .jumbotron{
+    margin-top:60px;
+    background: white;
+  } 
+ }
+@media (min-width: 992px) { 
+  .jumbotron{
+  margin-top:60px;
+  background: white;
+} 
+.jumbotron p{
+  font-size:24px;
+}
+.form-group .form-input {
+  font-size:16px;
+}
+
+/* content */
+.content{
+  margin-top: -38px;
+}
+.content .card-deck{
+  margin-top: 20px;
+  margin-right: 3rem;
+}
+
+.content h2{
+  font-size: 22px;
+  font-weight: 600;
+}
+.content p{
+  font-size: 15px;
+}
+.content .isuLainnya{
+  margin-top:6px;
+  margin-left: -50px;
+  border-left: 2px solid var(--green);
+  padding-left: 2rem;
+}
+
+/* bantuan personal */
+.bantuan h1{
+  font-size: 27px;
+}
+.b-tutor{
+  border-left:1px solid white;
+  margin-left: 90px;
+}
+
+.bantuan form{
+  background-color:#043;
+  padding: 20px;
+  border-radius:12px;
+  width: 26rem;
+  margin-left: -34px;
+}
+
+.bantuan .form-group input{height: 29px;}
+.tutor{margin-left: 15px;padding-left: 20px;}
+
+.tutor img{
+  width: 149px;
+  height: 249px;
+  padding-left: 13px;
+}
+
+
 }
