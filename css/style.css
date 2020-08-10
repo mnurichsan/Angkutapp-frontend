@@ -327,6 +327,7 @@ section.layanan{
 .layanan h1{
   color:var(--green);
   font-size : 20px;
+  font-weight: 600;
 }
 .layanan hr{
   border:1px solid var(--green);
@@ -341,12 +342,45 @@ align-items: center;
 }
 
 .layanan img{
-  width: 200px;
-  height: 145px;
+ width : 250px;
+ height: 165px;
   margin-bottom: 20px;
   border-radius: 20px;
 }
 
+section.pilar-angkut{
+  margin-top: 35px;
+  background: var(--green);
+  padding:25px;
+}
+
+.pilar-angkut h1{
+  color: white;
+  font-size : 20px;
+  font-weight: 600;
+}
+.pilar-angkut hr{
+  border:1px solid white;
+  width :120px;
+}
+
+.pilar-angkut img{
+  width: 172px;
+  height: 134px;
+  border-radius: 50%;
+  margin-top:50px;
+}
+
+.pilar-angkut h4{
+  color:white;
+  padding-top:20px;
+  font-weight: 600;
+}
+
+.pilar-angkut p{
+  color:white;
+  font-size: 15px;
+}
 
 
 
@@ -361,6 +395,7 @@ align-items: center;
 @media (min-width: 992px) {
 
   /* hlmnUtama */
+
   .layanan picture{
     padding-top: 20px;
     display: flex;
@@ -374,6 +409,23 @@ align-items: center;
     margin-bottom: 20px;
     border-radius: 20px;
   }
+
+  .pilar-angkut h1{
+  font-size : 25px;
+}
+
+.pilar-angkut h4{
+  font-size:20px;
+}
+
+.pilar-angkut p{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.pilar-angkut img{
+  margin-top:20px;
+}
 
   /* akhir */
   .jumbotron {
