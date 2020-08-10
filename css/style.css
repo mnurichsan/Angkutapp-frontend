@@ -310,6 +310,136 @@ body {
   color: var(--green);
 }
 
+/* halaman utama */
+header .jumbotron{
+  background: var(--green);
+  
+}
+
+section.layanan{
+  margin-top:20px;
+}
+
+.layanan .container{
+  padding-top:20px;
+}
+
+.layanan h1{
+  color:var(--green);
+  font-size : 20px;
+  font-weight: 600;
+}
+.layanan hr{
+  border:1px solid var(--green);
+  width :120px;
+}
+
+.layanan picture{
+padding-top: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.layanan img{
+ width : 250px;
+ height: 165px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+section.pilar-angkut{
+  margin-top: 35px;
+  background: var(--green);
+  padding:25px;
+}
+
+.pilar-angkut h1{
+  color: white;
+  font-size : 20px;
+  font-weight: 600;
+}
+.pilar-angkut hr{
+  border:1px solid white;
+  width :120px;
+}
+
+.pilar-angkut img{
+  width: 172px;
+  height: 134px;
+  border-radius: 50%;
+  margin-top:50px;
+}
+
+.pilar-angkut h4{
+  color:white;
+  padding-top:20px;
+  font-weight: 600;
+}
+
+.pilar-angkut p{
+  color:white;
+  font-size: 15px;
+}
+
+.testimonial {
+  margin-top: 50px;
+}
+
+
+.testimonial h1{
+  color:var(--green);
+  font-size : 20px;
+  font-weight: 600;
+}
+.testimonial hr{
+  border:1px solid var(--green);
+  width :120px;
+}
+
+
+.testimonial .card {
+  width: 18rem;
+  height: 20rem;
+  margin: 40px auto;
+  border-radius: 0px 40px;
+  background-color: var(--green);
+}
+
+.card .user-img img {
+  width: 10rem;
+  height: 9rem;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+.card .card-body h2 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  margin-top: -15px;
+}
+
+.card .card-body h3 {
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+.card .card-body hr {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: -1px;
+}
+
+.card .card-body p {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+/* akhir halaman utama */
+
 @media (min-width: 768px) {
   .jumbotron {
     margin-top: 60px;
@@ -317,6 +447,48 @@ body {
   }
 }
 @media (min-width: 992px) {
+
+  /* hlmnUtama */
+  .layanan h1{
+    font-size : 25px;
+  }
+
+  .layanan picture{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .layanan img{
+    width: 220px;
+    height: 160px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  .pilar-angkut h1{
+  font-size : 25px;
+}
+
+.pilar-angkut h4{
+  font-size:20px;
+}
+
+.pilar-angkut p{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.pilar-angkut img{
+  margin-top:20px;
+}
+
+.testimonial h1{
+    font-size : 25px;
+}
+
+  /* akhir */
   .jumbotron {
     margin-top: 60px;
     background: white;
