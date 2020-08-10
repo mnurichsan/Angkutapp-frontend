@@ -310,6 +310,48 @@ body {
   color: var(--green);
 }
 
+/* halaman utama */
+header .jumbotron{
+  background: var(--green);
+  
+}
+
+section.layanan{
+  margin-top:20px;
+}
+
+.layanan .container{
+  padding-top:20px;
+}
+
+.layanan h1{
+  color:var(--green);
+  font-size : 20px;
+}
+.layanan hr{
+  border:1px solid var(--green);
+  width :120px;
+}
+
+.layanan picture{
+padding-top: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.layanan img{
+  width: 200px;
+  height: 145px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+
+
+
+/* akhir halaman utama */
+
 @media (min-width: 768px) {
   .jumbotron {
     margin-top: 60px;
@@ -317,6 +359,23 @@ body {
   }
 }
 @media (min-width: 992px) {
+
+  /* hlmnUtama */
+  .layanan picture{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .layanan img{
+    width: 220px;
+    height: 160px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  /* akhir */
   .jumbotron {
     margin-top: 60px;
     background: white;
