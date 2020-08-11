@@ -228,8 +228,6 @@ body {
   color: darkgreen;
 }
 
-/* -----------------------------------------end page------------------------------------------------------- */
-
 /* content */
 .content {
   margin-top: -20px;
@@ -304,12 +302,13 @@ body {
 }
 .alamat-cabang hr {
   border: 1px solid var(--green);
-  transform: translateY(-13px);
-  width: 28rem;
+  width: 20rem;
 }
 .alamat-cabang p {
   color: var(--green);
 }
+
+/* akhir page pusat bantuan */
 
 /* halaman utama */
 
