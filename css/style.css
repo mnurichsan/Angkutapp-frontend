@@ -550,6 +550,12 @@ section.pilar-angkut {
     height: 249px;
     padding-left: 13px;
   }
+
+  /* page post */
+
+  .jumbotron-post .form-group .form-input {
+    width: 20rem !important;  
+  }
 }
 
 /* --------------------------------------------Page Post------------------------------ */
@@ -576,7 +582,7 @@ section.pilar-angkut {
 
 .jumbotron-post .form-group .form-input {
   padding: 11px;
-  width: 20rem;
+  width: 17rem;
   font-size: 14px;
   color: var(--green);
   border-radius: 10px;
