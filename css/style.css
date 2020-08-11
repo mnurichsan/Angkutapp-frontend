@@ -187,7 +187,7 @@ body {
 }
 .jumbotron .form-group {
   margin: -10px auto;
-  background-color: lightgrey;
+  background-color: #e9eceb;
   border-radius: 10px;
 }
 
@@ -264,29 +264,104 @@ body {
 
 /* bantuan */
 .bantuan {
-  background: var(--green);
   padding: 35px;
-}
-
-.bantuan .input input {
-  width: 15rem;
+  background: #e9eceb;
 }
 
 .bantuan h1 {
-  color: white;
+  color: var(--green);
   font-size: 24px;
   font-weight: 600;
-  margin-top: -18px;
-}
-.bantuan h5 {
-  color: white;
-  font-size: 19px;
+  margin-bottom: 40px;
 }
 
-.tutor img {
-  width: 149px;
-  height: 249px;
-  padding-left: 13px;
+.bantuan p {
+  font-size: 16px;
+}
+
+.form-area{
+  max-width: 450px;
+  padding: 20px 30px;
+  margin: 10px auto;
+  background: #fafafa;
+  border-radius: 5px;
+}
+
+.form-area .single-form{
+  position: relative;
+  margin-bottom: 30px;  
+}
+
+.form-area .single-form input,
+.form-area .single-form textarea{
+  width: 100%;
+  padding:10px;
+  outline-color: rgb(169, 169, 169);
+}
+
+.form-area .single-form input:focus + label,
+.form-area .single-form input:valid + label,
+.form-area .single-form textarea:focus + label,
+.form-area .single-form textarea:valid + label{
+  color:var(--green);
+  font-size: .9rem;
+  top: -10px;
+}
+
+.form-area .single-form input:focus + label:after,
+.form-area .single-form input:valid + label:after,
+.form-area .single-form textarea:focus + label:after,
+.form-area .single-form textarea:valid + label:after{
+  content: ' ';
+}
+
+.form-area .single-form textarea{
+  height: 120px;
+}
+
+.form-area label{
+  position: absolute;
+  top:12px;
+  left: 10px;
+  color: #777;
+  font-size: .9rem;
+  background: #fff;
+  transition: .5s;
+}
+
+.form-area button{
+  outline: unset;
+  border:unset;
+  background: var(--green);
+  border-radius: 10px;
+  width: 100%;
+  padding: 5px 20px;
+  color: #fafafa;
+  display: inline-block;
+  font-size: 15px;
+}
+.form-area button:hover{
+  background: #036635;
+  transition: .4s;
+
+}
+
+.bantuan .b-hp{
+  margin-top:50px;
+} 
+
+.b-hp picture{
+  margin-left: 57px;
+}
+.b-hp picture img{
+  padding-top: 10px;
+  margin-right: 10px;
+  width: 100px;
+  height: 150px;
+}
+
+.bantuan h4{
+  color:var(--green);
 }
 
 /* alamat */
@@ -299,11 +374,9 @@ body {
   color: var(--green);
   font-size: 27px;
   font-weight: 600;
+  margin-bottom: 50px;
 }
-.alamat-cabang hr {
-  border: 1px solid var(--green);
-  width: 20rem;
-}
+
 .alamat-cabang p {
   color: var(--green);
 }
@@ -519,35 +592,28 @@ section.pilar-angkut {
     padding-left: 2rem;
   }
 
-  /* bantuan personal */
+  /* bantuan personal */ 
   .bantuan h1 {
     font-size: 27px;
   }
-  .b-tutor {
-    border-left: 1px solid white;
-    margin-left: 90px;
+  .bantuan .b-hp{
+    border-left: 2px solid var(--green);
+    height: 26rem;
+    padding-left: 15px;
+    margin-top: -4px;
+  }
+  .bantuan .b-hp picture{
+    margin-left: 65px;
+  }
+  .bantuan picture img{
+    margin-top: 5px;
+    width: 150px;
+    height: 200px;
   }
 
-  .bantuan form {
-    background-color: #043;
-    padding: 20px;
-    border-radius: 12px;
-    width: 26rem;
-    margin-left: -34px;
-  }
-
-  .bantuan .form-group input {
-    height: 29px;
-  }
-  .tutor {
-    margin-left: 15px;
-    padding-left: 20px;
-  }
-
-  .tutor img {
-    width: 149px;
-    height: 249px;
-    padding-left: 13px;
+  .bantuan h4{
+    color:var(--green);
+    text-align: center;
   }
 
   /* page post */

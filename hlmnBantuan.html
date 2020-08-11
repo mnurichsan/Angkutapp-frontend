@@ -184,36 +184,37 @@
         <h1 class="text-center">Bantuan Personal</h1>
       </div>
     </div>
-    <div class="row mt-2">
-      <div class="col-md-4 mx-auto pesan">
-        <h5 class="text-center">Melalui Pesan Web</h5>
-        <form action="" method="POST">
-          <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tulis Pesan Anda Disini"></textarea>
-          </div>
-          <div class="form-group">
-            <div class="row">
-              <div class="col-6">
-              <input type="email" class="form-control" placeholder="Email Anda">
-              </div>
-              <div class="col-6">
-              <input type="telp" class="form-control" placeholder="Nomor Telpon">
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary mt-3">Kirim</button>
-          </div>
-        </form>
-      </div>
-      <div class="col-md-6 b-tutor">
-        <h5 class="text-center">Melalui Aplikasi</h5>
-        <picture class="tutor">
+  </div>
+  <div class="row">
+    <div class="col-md-4 offset-1">
+      <h4>Melalui Pesan Web</h4>
+      <form action="" method="post">
+        <div class="form-area">
+          <p class="single-form">
+            <input type="email" name="email" id="email" autocomplete="off" required />
+            <label for="email">Email</label>
+          </p>
+          <p class="single-form">
+            <input type="telp" name="telp" id="telp" autocomplete="off" required />
+            <label for="telp">Nomor telpon</label>
+          </p>
+          <p class="single-form">
+            <textarea type="text" name="pesan" id="pesan" required></textarea>
+            <label for="pesan">Pesan anda</label>
+          </p>
+          <button type="submit" name="kirim">Kirim</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <div class="b-hp">
+        <h4>Melalui Aplikasi</h4>
+        <picture>
           <img src="img/handphone.png" alt="" class="img-fluid">
           <img src="img/handphone.png" alt="" class="img-fluid">
           <img src="img/handphone.png" alt="" class="img-fluid">
         </picture>
-        </div>
       </div>
-    </div>
     </div>
   </div>
 </section>
@@ -223,7 +224,6 @@
       <div class="row">
           <div class="col-md-12">
               <h1 class="text-center">Beberapa Alamat Kantor Cabang</h1>
-              <hr>
           </div>
       </div>
       <div class="row">
