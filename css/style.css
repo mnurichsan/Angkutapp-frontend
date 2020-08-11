@@ -350,13 +350,11 @@ body {
   margin-top:50px;
 } 
 
-.b-hp picture{
-  margin-left: 57px;
-}
 .b-hp picture img{
   padding-top: 10px;
-  margin-right: 10px;
-  width: 100px;
+  padding-right: 10px;
+  margin-left: 10px;
+  width: 80px;
   height: 150px;
 }
 
