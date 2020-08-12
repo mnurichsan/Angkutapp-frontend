@@ -706,6 +706,7 @@ section.pilar-angkut {
   padding: 3rem 3rem 3rem 3rem;
   background: #303036;
   position: relative;
+  margin-left: -30px;
 }
 .footer h3,
 .footer h1{
@@ -720,9 +721,13 @@ section.pilar-angkut {
   color: white;
 }
 
+.footer-top picture{
+  display: flex;
+}
 .footer .footer-top img{
   width: 10rem;
   border-radius: 15px;
+  padding-right: 10px;
 }
 
 .footer .footer-item{
@@ -774,4 +779,11 @@ section.pilar-angkut {
   left: 0;
   bottom: 0;
   overflow-y: hidden;
+}
+
+@media screen and (min-width: 300px) {
+  .footer .footer-item{
+    margin-left: -50px;
+    list-style: none;
+  }
 }
