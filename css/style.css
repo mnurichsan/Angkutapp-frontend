@@ -21,24 +21,23 @@ body {
   background-color: #16a085;
 }
 
-
 .nav-item {
   margin-right: 7px;
   font-weight: 500;
   color: white;
 }
 
-.nav-item .nav-link{
-  font-size: .8rem;
+.nav-item .nav-link {
+  font-size: 0.8rem;
 }
 
-.navbar-brand img{
-  width:4rem;
+.navbar-brand img {
+  width: 4rem;
 }
 
-button.navbar-toggler{
-outline-color: var(--green);
-border: unset;
+button.navbar-toggler {
+  outline-color: var(--green);
+  border: unset;
 }
 /* end */
 
@@ -79,8 +78,8 @@ border: unset;
   margin-left: auto;
   margin-right: auto;
   border: none;
-  width: 23rem;
-  height: 7rem;
+  width: 345px;
+  height: 130px;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
@@ -119,8 +118,8 @@ border: unset;
 
 .driver .profile-card-2 .card-body {
   position: relative;
-  border: none;
-  background-color: #16a085;
+  border: 1px solid #16a085;
+  background-color: white;
 }
 .driver .profile-card-2 .profile {
   border-radius: 50%;
@@ -128,29 +127,44 @@ border: unset;
   top: -42px;
   left: 15%;
   max-width: 75px;
-  border: 3px solid rgba(255, 255, 255, 1);
+  border: 3px solid #16a085;
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
 }
 .driver .profile-card-2 h5 {
   font-weight: 600;
+  color: #16a085;
+}
+.driver .profile-card-2 h6 {
+  margin-top: -8px;
+  font-weight: 600;
+  color: #16a085;
+}
+
+.driver hr {
+  width: 50%;
+  margin-top: 10px;
+  border: 1px solid;
+  color: #16a085;
 }
 .driver .profile-card-2 .card-text {
   font-weight: 300;
   font-size: 15px;
+  color: #16a085;
+  margin-top: -10px;
 }
 
 .question {
-  background-color: #16a085;
+  background-color: #f0f0f0;
 }
 .question h1 {
-  color: white;
+  color: #16a085;
   font-weight: 550;
 }
 .question hr {
   width: 50%;
   border: 1px solid;
-  color: white;
+  color: #16a085;
 }
 
 .question .collapsible-link::before {
@@ -290,7 +304,7 @@ border: unset;
   font-size: 16px;
 }
 
-.form-area{
+.form-area {
   max-width: 450px;
   padding: 20px 30px;
   margin: 10px auto;
@@ -298,51 +312,51 @@ border: unset;
   border-radius: 5px;
 }
 
-.form-area .single-form{
+.form-area .single-form {
   position: relative;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 }
 
 .form-area .single-form input,
-.form-area .single-form textarea{
+.form-area .single-form textarea {
   width: 100%;
-  padding:10px;
+  padding: 10px;
   outline-color: rgb(169, 169, 169);
 }
 
 .form-area .single-form input:focus + label,
 .form-area .single-form input:valid + label,
 .form-area .single-form textarea:focus + label,
-.form-area .single-form textarea:valid + label{
-  color:var(--green);
-  font-size: .9rem;
+.form-area .single-form textarea:valid + label {
+  color: var(--green);
+  font-size: 0.9rem;
   top: -10px;
 }
 
 .form-area .single-form input:focus + label:after,
 .form-area .single-form input:valid + label:after,
 .form-area .single-form textarea:focus + label:after,
-.form-area .single-form textarea:valid + label:after{
-  content: ' ';
+.form-area .single-form textarea:valid + label:after {
+  content: " ";
 }
 
-.form-area .single-form textarea{
+.form-area .single-form textarea {
   height: 120px;
 }
 
-.form-area label{
+.form-area label {
   position: absolute;
-  top:12px;
+  top: 12px;
   left: 10px;
   color: #777;
-  font-size: .9rem;
+  font-size: 0.9rem;
   background: #fff;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.form-area button{
+.form-area button {
   outline: unset;
-  border:unset;
+  border: unset;
   background: var(--green);
   border-radius: 10px;
   width: 100%;
@@ -351,17 +365,16 @@ border: unset;
   display: inline-block;
   font-size: 15px;
 }
-.form-area button:hover{
+.form-area button:hover {
   background: #036635;
-  transition: .4s;
-
+  transition: 0.4s;
 }
 
-.bantuan .b-hp{
-  margin-top:50px;
-} 
+.bantuan .b-hp {
+  margin-top: 50px;
+}
 
-.b-hp picture img{
+.b-hp picture img {
   padding-top: 10px;
   padding-right: 10px;
   margin-left: 10px;
@@ -369,8 +382,8 @@ border: unset;
   height: 150px;
 }
 
-.bantuan h4{
-  color:var(--green);
+.bantuan h4 {
+  color: var(--green);
 }
 
 /* alamat */
@@ -601,34 +614,34 @@ section.pilar-angkut {
     padding-left: 2rem;
   }
 
-  /* bantuan personal */ 
+  /* bantuan personal */
   .bantuan h1 {
     font-size: 27px;
   }
-  .bantuan .b-hp{
+  .bantuan .b-hp {
     border-left: 2px solid var(--green);
     height: 26rem;
     padding-left: 15px;
     margin-top: -4px;
   }
-  .bantuan .b-hp picture{
+  .bantuan .b-hp picture {
     margin-left: 65px;
   }
-  .bantuan picture img{
+  .bantuan picture img {
     margin-top: 5px;
     width: 150px;
     height: 200px;
   }
 
-  .bantuan h4{
-    color:var(--green);
+  .bantuan h4 {
+    color: var(--green);
     text-align: center;
   }
 
   /* page post */
 
   .jumbotron-post .form-group .form-input {
-    width: 20rem !important;  
+    width: 20rem !important;
   }
 }
 
@@ -702,59 +715,59 @@ section.pilar-angkut {
 }
 
 /* footer */
-.footer{
+.footer {
   padding: 3rem 3rem 3rem 3rem;
   background: #303036;
   position: relative;
   margin-left: -30px;
 }
 .footer h3,
-.footer h1{
+.footer h1 {
   color: #fff;
   font-weight: 700;
 }
-.footer p{
+.footer p {
   color: #fff;
   font-weight: 500;
 }
-.footer .nav-footer{
+.footer .nav-footer {
   color: white;
 }
 
-.footer-top picture{
+.footer-top picture {
   display: flex;
 }
-.footer .footer-top img{
+.footer .footer-top img {
   width: 10rem;
   border-radius: 15px;
   padding-right: 10px;
 }
 
-.footer .footer-item{
-  line-height:2rem;
+.footer .footer-item {
+  line-height: 2rem;
 }
-.footer .footer-item:hover{
+.footer .footer-item:hover {
   margin-left: 20px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.nav-footer a{
+.nav-footer a {
   color: white;
   text-decoration: none;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
-.sosmed .nav-footer{
+.sosmed .nav-footer {
   list-style: none;
   display: inline-block;
 }
 
-.sosmed-item{
+.sosmed-item {
   display: inline;
   margin-right: 20px;
 }
 
-.sosmed-link{
+.sosmed-link {
   border: 1px solid rgba(255, 255, 255, 1);
   display: inline-block;
   padding: 5px 8px;
@@ -764,12 +777,12 @@ section.pilar-angkut {
 .sosmed-item .fa-instagram,
 .sosmed-item .fa-facebook-square,
 .sosmed-item .fa-youtube,
-.sosmed-item .fa-twitter-square{
+.sosmed-item .fa-twitter-square {
   font-size: 1.2rem;
   line-height: unset;
 }
 
-.footer-bottom{
+.footer-bottom {
   background: #343a40;
   text-align: center;
   height: 40px;
@@ -782,7 +795,7 @@ section.pilar-angkut {
 }
 
 @media screen and (min-width: 300px) {
-  .footer .footer-item{
+  .footer .footer-item {
     margin-left: -50px;
     list-style: none;
   }
