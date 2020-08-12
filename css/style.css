@@ -790,6 +790,9 @@ section.pilar-angkut {
   transform: translateY(2px);
 }
 
+.footer-top .driver{
+  padding-top:10px;
+}
 
 .footer-bottom{
   text-align: center;
@@ -807,13 +810,21 @@ section.pilar-angkut {
   color: rgb(211, 211, 211);
 }
 
+
 @media screen and (max-width: 424px) {
-  .footer .footer-item{
+  .footer .nav-footer{
     list-style: none;
-    margin-left: -65px;
+    margin-left: -25px;
   }
   .footer .footer-item:hover{
     transform: unset;
   }
+
+  .footer h3,
+.footer h1{
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  margin-left: -20px;
+}
 
 }
