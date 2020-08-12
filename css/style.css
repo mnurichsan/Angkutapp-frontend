@@ -21,11 +21,26 @@ body {
   background-color: #16a085;
 }
 
+
 .nav-item {
   margin-right: 7px;
   font-weight: 500;
   color: white;
 }
+
+.nav-item .nav-link{
+  font-size: .8rem;
+}
+
+.navbar-brand img{
+  width:4rem;
+}
+
+button.navbar-toggler{
+outline-color: var(--green);
+border: unset;
+}
+/* end */
 
 /* Carousel */
 .carousel {
@@ -169,10 +184,6 @@ body {
 
 .question .collapsible-link[aria-expanded="true"]::before {
   transform: rotate(180deg);
-}
-
-.footer {
-  background-color: #16a085;
 }
 
 /* --------------------------------------page pusat bantuan----------------------------------------------- */
@@ -688,4 +699,79 @@ section.pilar-angkut {
 .post h2 {
   font-weight: 600;
   color: #16a085;
+}
+
+/* footer */
+.footer{
+  padding: 3rem 3rem 3rem 3rem;
+  background: #303036;
+  position: relative;
+}
+.footer h3,
+.footer h1{
+  color: #fff;
+  font-weight: 700;
+}
+.footer p{
+  color: #fff;
+  font-weight: 500;
+}
+.footer .nav-footer{
+  color: white;
+}
+
+.footer .footer-top img{
+  width: 10rem;
+  border-radius: 15px;
+}
+
+.footer .footer-item{
+  line-height:2rem;
+}
+.footer .footer-item:hover{
+  margin-left: 20px;
+  transition: .5s;
+}
+
+.nav-footer a{
+  color: white;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.sosmed .nav-footer{
+  list-style: none;
+  display: inline-block;
+}
+
+.sosmed-item{
+  display: inline;
+  margin-right: 20px;
+}
+
+.sosmed-link{
+  border: 1px solid rgba(255, 255, 255, 1);
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 9px;
+}
+
+.sosmed-item .fa-instagram,
+.sosmed-item .fa-facebook-square,
+.sosmed-item .fa-youtube,
+.sosmed-item .fa-twitter-square{
+  font-size: 1.2rem;
+  line-height: unset;
+}
+
+.footer-bottom{
+  background: #343a40;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  overflow-y: hidden;
 }
