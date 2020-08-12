@@ -34,7 +34,7 @@ body {
  
 .navbar-brand img{
   width: 4.6rem;
-  margin-left: -50px;
+  margin-left: -10px;
 }
 
 button.navbar-toggler{
@@ -807,10 +807,10 @@ section.pilar-angkut {
   color: rgb(211, 211, 211);
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 424px) {
   .footer .footer-item{
     list-style: none;
-    margin-left: -50px;
+    margin-left: -65px;
   }
   .footer .footer-item:hover{
     transform: unset;
