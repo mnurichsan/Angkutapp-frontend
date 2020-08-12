@@ -29,12 +29,12 @@ body {
 }
 
 .nav-item .nav-link{
-  font-size: .8rem;
+  font-size: .9rem;
 }
-
+ 
 .navbar-brand img{
-  width:5rem;
-  height: 3rem;
+  width: 4.6rem;
+  margin-left: -50px;
 }
 
 button.navbar-toggler{
@@ -42,11 +42,6 @@ outline-color: var(--green);
 border: unset;
 }
 
-/* @media screen and (max-width : 370px){
-  .navbar{
-    display:flex;
-  }
-} */
 /* end */
 
 /* Carousel */
