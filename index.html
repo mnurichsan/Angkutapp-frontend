@@ -10,10 +10,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
-
+    <!-- animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
     <!-- owlCarousel -->
-    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.css" />
@@ -33,7 +34,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
+        <div class="animated slideInDown container">
           <a class="navbar-brand ml-5" href="#">
             <img src="img/logo.png" alt="Hefa Store" width="80px" />
           </a>
@@ -47,7 +48,7 @@
                 <a class="nav-link text-white" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Tentang Kami</a>
+                <a class="nav-link text-white" href="">Tentang Kami</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="layanan.html">Layanan</a>
@@ -74,7 +75,7 @@
       </nav>
 
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner mb-3">
+        <div class="animated slideInDown carousel-inner mb-3">
           <div class="container mt-5">
             <div class="carousel-item active">
               <div class="row pt-5 justify-content-center">
@@ -138,9 +139,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    
-    
-    <section class="layanan">
+    <section class="animated slideInLeft layanan">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -163,7 +162,7 @@
             </div>
     </section>
     
-    <section class="pilar-angkut">
+    <section class="animated slideInUp pilar-angkut">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -385,8 +384,8 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
-    <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
-    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="vendor/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,

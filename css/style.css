@@ -839,3 +839,11 @@ section.pilar-angkut {
     margin-left: -20px;
   }
 }
+
+/* -----------------------------------Detail post----------------------------------------- */
+.detail {
+  margin-top: 100px;
+}
+.detailSearch .form-group {
+  background-color: #f0f0f0;
+}
