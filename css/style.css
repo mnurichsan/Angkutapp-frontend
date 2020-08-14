@@ -28,17 +28,19 @@ body {
 }
 
 .nav-item .nav-link {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .navbar-brand img {
-  width: 4rem;
+  width: 4.6rem;
+  margin-left: -10px;
 }
 
 button.navbar-toggler {
   outline-color: var(--green);
   border: unset;
 }
+
 /* end */
 
 /* Carousel */
@@ -60,11 +62,8 @@ button.navbar-toggler {
   background-color: #16a085;
 }
 
-.pete hr,
-.pengguna hr {
-  width: 50%;
-  border: 1px solid;
-  color: #16a085;
+.brands {
+  padding: 50px 0;
 }
 
 .pete h1,
@@ -72,16 +71,30 @@ button.navbar-toggler {
   font-family: "Montserrat";
   color: #16a085;
   font-weight: 550;
+  padding: 20px 0;
+}
+
+.show h4 {
+  background: white;
+  display: inline-block;
+  color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 5px;
+  transform: translateY(10px);
 }
 .show .card {
   background-color: #16a085;
-  margin-left: auto;
-  margin-right: auto;
   border: none;
-  width: 345px;
-  height: 130px;
+  width: 22rem;
+  height: 7rem;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .card .btn-circle {
   width: 30px;
@@ -154,11 +167,8 @@ button.navbar-toggler {
   margin-top: -10px;
 }
 
-.question {
-  background-color: #f0f0f0;
-}
 .question h1 {
-  color: #16a085;
+  color: var(--green);
   font-weight: 550;
 }
 .question hr {
@@ -198,6 +208,15 @@ button.navbar-toggler {
 
 .question .collapsible-link[aria-expanded="true"]::before {
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 370px) {
+  .show .card {
+    width: 100% !important;
+  }
+  .show p {
+    font-size: 14px;
+  }
 }
 
 /* --------------------------------------page pusat bantuan----------------------------------------------- */
@@ -717,21 +736,21 @@ section.pilar-angkut {
 /* footer */
 .footer {
   padding: 3rem 3rem 3rem 3rem;
-  background: #303036;
+  background: #367c6d;
   position: relative;
   margin-left: -30px;
 }
 .footer h3,
 .footer h1 {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-weight: 700;
 }
 .footer p {
-  color: #fff;
+  color: rgb(224, 224, 224);
   font-weight: 500;
 }
 .footer .nav-footer {
-  color: white;
+  color: rgb(224, 224, 224);
 }
 
 .footer-top picture {
@@ -741,18 +760,19 @@ section.pilar-angkut {
   width: 10rem;
   border-radius: 15px;
   padding-right: 10px;
+  opacity: 0.9;
 }
 
 .footer .footer-item {
   line-height: 2rem;
 }
 .footer .footer-item:hover {
-  margin-left: 20px;
+  transform: translateX(5px);
   transition: 0.5s;
 }
 
 .nav-footer a {
-  color: white;
+  color: rgb(224, 224, 224);
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -764,7 +784,7 @@ section.pilar-angkut {
 
 .sosmed-item {
   display: inline;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .sosmed-link {
@@ -780,10 +800,14 @@ section.pilar-angkut {
 .sosmed-item .fa-twitter-square {
   font-size: 1.2rem;
   line-height: unset;
+  transform: translateY(2px);
+}
+
+.footer-top .driver {
+  padding-top: 10px;
 }
 
 .footer-bottom {
-  background: #343a40;
   text-align: center;
   height: 40px;
   line-height: 40px;
@@ -792,11 +816,26 @@ section.pilar-angkut {
   left: 0;
   bottom: 0;
   overflow-y: hidden;
+  border-top: 1px solid rgb(190, 190, 190);
 }
 
-@media screen and (min-width: 300px) {
-  .footer .footer-item {
-    margin-left: -50px;
+.footer-bottom p {
+  color: rgb(211, 211, 211);
+}
+
+@media screen and (max-width: 424px) {
+  .footer .nav-footer {
     list-style: none;
+    margin-left: -25px;
+  }
+  .footer .footer-item:hover {
+    transform: unset;
+  }
+
+  .footer h3,
+  .footer h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin-left: -20px;
   }
 }
