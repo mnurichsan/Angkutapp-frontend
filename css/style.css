@@ -1,6 +1,21 @@
-body {
-  font-family: "Montserrat";
+/* css reset */
+* {
+  box-sizing: border-box;
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --green: #16a085;
+}
+
+/* end css reset */
 
 .navbar {
   background-color: #16a085;
@@ -11,6 +26,22 @@ body {
   font-weight: 500;
   color: white;
 }
+
+.nav-item .nav-link {
+  font-size: 0.9rem;
+}
+
+.navbar-brand img {
+  width: 4.6rem;
+  margin-left: -10px;
+}
+
+button.navbar-toggler {
+  outline-color: var(--green);
+  border: unset;
+}
+
+/* end */
 
 /* Carousel */
 .carousel {
@@ -31,11 +62,8 @@ body {
   background-color: #16a085;
 }
 
-.pete hr,
-.pengguna hr {
-  width: 50%;
-  border: 1px solid;
-  color: #16a085;
+.brands {
+  padding: 50px 0;
 }
 
 .pete h1,
@@ -43,17 +71,33 @@ body {
   font-family: "Montserrat";
   color: #16a085;
   font-weight: 550;
+  padding: 20px 0;
 }
+
+.show h4 {
+  background: white;
+  display: inline-block;
+  color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 5px;
+  transform: translateY(10px);
+}
+
 .show .card {
   background-color: #16a085;
-  margin-left: auto;
-  margin-right: auto;
   border: none;
-  width: 23rem;
+  width: 22rem;
   height: 7rem;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
+
 .card .btn-circle {
   width: 30px;
   height: 30px;
@@ -64,6 +108,7 @@ body {
   border-radius: 15px;
   background-color: white;
 }
+
 .card .btn-circle.btn-lg {
   width: 50px;
   height: 50px;
@@ -89,38 +134,55 @@ body {
 
 .driver .profile-card-2 .card-body {
   position: relative;
-  border: none;
-  background-color: #16a085;
+  border: 1px solid #16a085;
+  background-color: white;
 }
+
 .driver .profile-card-2 .profile {
   border-radius: 50%;
   position: absolute;
   top: -42px;
   left: 15%;
   max-width: 75px;
-  border: 3px solid rgba(255, 255, 255, 1);
+  border: 3px solid #16a085;
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
 }
+
 .driver .profile-card-2 h5 {
   font-weight: 600;
+  color: #16a085;
 }
+
+.driver .profile-card-2 h6 {
+  margin-top: -8px;
+  font-weight: 600;
+  color: #16a085;
+}
+
+.driver hr {
+  width: 50%;
+  margin-top: 10px;
+  border: 1px solid;
+  color: #16a085;
+}
+
 .driver .profile-card-2 .card-text {
   font-weight: 300;
   font-size: 15px;
+  color: #16a085;
+  margin-top: -10px;
 }
 
-.question {
-  background-color: #16a085;
-}
 .question h1 {
-  color: white;
+  color: var(--green);
   font-weight: 550;
 }
+
 .question hr {
   width: 50%;
   border: 1px solid;
-  color: white;
+  color: #16a085;
 }
 
 .question .collapsible-link::before {
@@ -156,6 +218,501 @@ body {
   transform: rotate(180deg);
 }
 
-.footer {
+@media screen and (max-width: 370px) {
+  .show .card {
+    width: 100% !important;
+  }
+
+  .show p {
+    font-size: 14px;
+  }
+}
+
+/* --------------------------------------page pusat bantuan----------------------------------------------- */
+
+.jumbotron {
+  margin-top: 100px;
+  background: white;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: var(--green);
+}
+
+.jumbotron .form-group {
+  margin: -10px auto;
+  background-color: #e9eceb;
+  border-radius: 10px;
+}
+
+.form-group .form-input::-webkit-input-placeholder {
+  color: var(--green);
+}
+
+.form-group .form-input:-moz-input-placeholder {
+  color: var(--green);
+}
+
+.form-group .form-input {
+  padding: 6.7px;
+  width: 18rem;
+  font-size: 14px;
+  color: var(--green);
+  border-radius: 10px;
+  background: unset;
+  border: unset;
+  outline: unset;
+}
+
+.form-group .search-btn {
+  background: unset;
+  border: unset;
+  outline: unset;
+  cursor: pointer;
+}
+
+.search-btn .fa-search {
+  font-size: 22px;
+  padding-right: 5px;
+  color: var(--green);
+  margin-top: 5px;
+}
+
+.search-btn .fa-search:hover {
+  color: darkgreen;
+}
+
+/* content */
+.content {
+  margin-top: -20px;
+}
+
+.card-deck {
+  margin-top: 20px;
+  margin-right: 3rem;
+}
+
+.card-deck .card {
+  border-radius: 25px;
+  height: 13rem;
+}
+
+.content h2 {
+  font-size: 18px;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.content .card-body p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.content .isuLainnya {
+  margin-top: 2rem;
+  border-left: 2px solid var(--green);
+  padding-left: 2rem;
+}
+
+.content .isuLainnya p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 15px;
+}
+
+/* bantuan */
+.bantuan {
+  padding: 35px;
+  background: #e9eceb;
+}
+
+.bantuan h1 {
+  color: var(--green);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.bantuan p {
+  font-size: 16px;
+}
+
+.form-area {
+  max-width: 450px;
+  padding: 20px 30px;
+  margin: 10px auto;
+  background: #fafafa;
+  border-radius: 5px;
+}
+
+.form-area .single-form {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-area .single-form input,
+.form-area .single-form textarea {
+  width: 100%;
+  padding: 10px;
+  outline-color: rgb(169, 169, 169);
+}
+
+.form-area .single-form input:focus+label,
+.form-area .single-form input:valid+label,
+.form-area .single-form textarea:focus+label,
+.form-area .single-form textarea:valid+label {
+  color: var(--green);
+  font-size: 0.9rem;
+  top: -10px;
+}
+
+.form-area .single-form input:focus+label:after,
+.form-area .single-form input:valid+label:after,
+.form-area .single-form textarea:focus+label:after,
+.form-area .single-form textarea:valid+label:after {
+  content: " ";
+}
+
+.form-area .single-form textarea {
+  height: 120px;
+}
+
+.form-area label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #777;
+  font-size: 0.9rem;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.form-area button {
+  outline: unset;
+  border: unset;
+  background: var(--green);
+  border-radius: 10px;
+  width: 100%;
+  padding: 5px 20px;
+  color: #fafafa;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.form-area button:hover {
+  background: #036635;
+  transition: 0.4s;
+}
+
+.bantuan .b-hp {
+  margin-top: 50px;
+}
+
+.b-hp picture img {
+  padding-top: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  width: 80px;
+  height: 150px;
+}
+
+.bantuan h4 {
+  color: var(--green);
+}
+
+/* alamat */
+.alamat-cabang picture img {
+  width: 10rem !important;
+  margin-left: 63px;
+}
+
+.alamat-cabang h1 {
+  color: var(--green);
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.alamat-cabang p {
+  color: var(--green);
+}
+
+/* akhir page pusat bantuan */
+
+@media (min-width: 768px) {
+  .jumbotron {
+    margin-top: 60px;
+    background: white;
+  }
+}
+
+@media (min-width: 992px) {
+  .jumbotron {
+    margin-top: 60px;
+    background: white;
+  }
+
+  .jumbotron p {
+    font-size: 24px;
+  }
+
+  .form-group .form-input {
+    font-size: 16px;
+  }
+
+  /* content */
+  .content {
+    margin-top: -38px;
+  }
+
+  .content .card-deck {
+    margin-top: 20px;
+    margin-right: 3rem;
+  }
+
+  .content h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .content p {
+    font-size: 15px;
+  }
+
+  .content .isuLainnya {
+    margin-top: 6px;
+    margin-left: -50px;
+    border-left: 2px solid var(--green);
+    padding-left: 2rem;
+  }
+
+  /* bantuan personal */
+  .bantuan h1 {
+    font-size: 27px;
+  }
+
+  .bantuan .b-hp {
+    border-left: 2px solid var(--green);
+    height: 26rem;
+    padding-left: 15px;
+    margin-top: -4px;
+  }
+
+  .bantuan .b-hp picture {
+    margin-left: 65px;
+  }
+
+  .bantuan picture img {
+    margin-top: 5px;
+    width: 150px;
+    height: 200px;
+  }
+
+  .bantuan h4 {
+    color: var(--green);
+    text-align: center;
+  }
+
+  /* page post */
+
+  .jumbotron-post .form-group .form-input {
+    width: 20rem !important;
+  }
+}
+
+/* --------------------------------------------Page Post------------------------------ */
+.jumbotron-post .jumbotron {
+  margin-top: 100px;
+  background: white;
+}
+
+.jumbotron-post .jumbotron h1 {
+  color: var(--green);
+}
+
+.jumbotron-post .jumbotron .form-group {
+  margin: -10px auto;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.jumbotron-post .form-group .form-input::-webkit-input-placeholder {
+  color: var(--green);
+}
+
+.jumbotron-post .form-group .form-input:-moz-input-placeholder {
+  color: var(--green);
+}
+
+.jumbotron-post .form-group .form-input {
+  padding: 11px;
+  width: 17rem;
+  font-size: 14px;
+  color: var(--green);
+  border-radius: 10px;
+  background: unset;
+  border: unset;
+  outline: unset;
+}
+
+.jumbotron-post .form-group .search-btn {
+  background: unset;
+  border: unset;
+  outline: unset;
+  cursor: pointer;
+}
+
+.jumbotron-post .search-btn .fa-search {
+  font-size: 22px;
+  color: var(--green);
+  margin-top: 5px;
+}
+
+.jumbotron-post .search-btn .fa-search:hover {
+  color: darkgreen;
+}
+
+.search .card {
+  width: 20rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   background-color: #16a085;
+}
+
+.search .card-title {
+  color: white;
+}
+
+.aside h3 {
+  font-weight: 600;
+  color: #16a085;
+}
+
+.post h2 {
+  font-weight: 600;
+  color: #16a085;
+}
+
+/* footer */
+.footer {
+  padding: 3rem 3rem 3rem 3rem;
+  background: #367c6d;
+  position: relative;
+  margin-left: -30px;
+}
+
+.footer h3,
+.footer h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.footer p {
+  color: rgb(224, 224, 224);
+  font-weight: 500;
+}
+
+.footer .nav-footer {
+  color: rgb(224, 224, 224);
+}
+
+.footer-top picture {
+  display: flex;
+}
+
+.footer .footer-top img {
+  width: 10rem;
+  border-radius: 15px;
+  padding-right: 10px;
+  opacity: 0.9;
+}
+
+.footer .footer-item {
+  line-height: 2rem;
+}
+
+.footer .footer-item:hover {
+  transform: translateX(5px);
+  transition: 0.5s;
+}
+
+.nav-footer a {
+  color: rgb(224, 224, 224);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.sosmed .nav-footer {
+  list-style: none;
+  display: inline-block;
+}
+
+.sosmed-item {
+  display: inline;
+  margin-right: 5px;
+}
+
+.sosmed-link {
+  border: 1px solid rgba(255, 255, 255, 1);
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 9px;
+}
+
+.sosmed-item .fa-instagram,
+.sosmed-item .fa-facebook-square,
+.sosmed-item .fa-youtube,
+.sosmed-item .fa-twitter-square {
+  font-size: 1.2rem;
+  line-height: unset;
+  transform: translateY(2px);
+}
+
+.footer-top .driver {
+  padding-top: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  overflow-y: hidden;
+  border-top: 1px solid rgb(190, 190, 190);
+}
+
+.footer-bottom p {
+  color: rgb(211, 211, 211);
+}
+
+@media screen and (max-width: 424px) {
+  .footer .nav-footer {
+    list-style: none;
+    margin-left: -25px;
+  }
+
+  .footer .footer-item:hover {
+    transform: unset;
+  }
+
+  .footer h3,
+  .footer h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin-left: -20px;
+  }
+}
+
+/* -----------------------------------Detail post----------------------------------------- */
+.detail {
+  margin-top: 100px;
+}
+
+.detailSearch .form-group {
+  background-color: #f0f0f0;
 }
