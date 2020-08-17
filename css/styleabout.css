@@ -1,0 +1,272 @@
+/* global style */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #16a085;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+/* nav */
+nav.navbar {
+    background: var(--green);
+}
+
+nav.navbar {
+    z-index: 999;
+    width: 100%;
+}
+
+.navbar-brand {
+    width: 70px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 1.2rem;
+}
+
+button.navbar-toggler {
+    background: unset;
+    border: unset;
+    outline: unset;
+}
+
+.jumbotron {
+    padding: 5rem 2rem;
+    margin-top: 13%;
+    background: #eaeaea !important;
+}
+
+.jumbotron .display-4 {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.jumbotron .lead {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.main h2 {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.main h3 {
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 0.8;
+}
+
+.main span {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 10%;
+    height: 15%;
+    text-align: center;
+    border-radius: 20%;
+}
+
+.main p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.info h1 {
+    color: var(--green);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.info hr {
+    width: 50%;
+    border: 1px solid var(--green);
+}
+
+.info p {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.info img {
+    margin-top: 10rem;
+}
+
+.kelebihan h1 {
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.kelebihan hr {
+    margin: auto;
+    width: 25%;
+    border: 1px solid var(--green);
+}
+
+.info-panel {
+    margin-top: 5rem;
+    position: relative;
+}
+
+.info-panel p {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.info-panel .badge {
+    position: absolute;
+    top: -1.5rem;
+    left: .5rem;
+}
+
+.info-panel .badge.badge-secondary {
+    background-color: var(--green);
+    padding: .8rem;
+}
+
+@media (min-width: 992px) {
+    .nav-link {
+        margin-right: 30px;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        color: white !important;
+    }
+
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid white;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        padding: 1rem 2rem;
+        margin-top: 5%;
+        height: 500px;
+    }
+
+    .jumbotron .display-4 {
+        color: var(--green);
+        font-weight: 700;
+        font-size: 5rem;
+        margin-top: 20%;
+    }
+
+    .jumbotron .lead {
+        font-size: 2rem;
+    }
+
+    .jumbotron a.btn {
+        padding: 1rem 3rem;
+        font-size: 1.5rem;
+    }
+
+    .jumbotron img {
+        width: 80%;
+        margin-left: 7rem;
+        margin-top: 5rem;
+    }
+
+    .main h2 {
+        color: var(--green);
+        font-size: 3rem;
+    }
+
+    .main h3 {
+        font-size: 2.3rem;
+        color: var(--green);
+        line-height: 1;
+    }
+
+    .main .keterangan {
+        padding-top: 15rem;
+        padding-left: 7rem;
+    }
+
+    .main span {
+        background: var(--green);
+        color: white;
+        width: 9%;
+        height: 3.4rem;
+        border-radius: 12%;
+        line-height: 3.4rem;
+    }
+
+    .main p {
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+
+    .info h1 {
+        padding-top: 4rem;
+        font-size: 4rem;
+    }
+
+    .info hr {
+        width: 46%;
+    }
+
+    .info p {
+        font-size: 1.7rem;
+    }
+
+    .info img {
+        margin-top: 3rem;
+    }
+
+    .kelebihan h1 {
+        padding-top: 4rem;
+        font-size: 4rem;
+    }
+
+    .kelebihan hr {
+        width: 20%;
+    }
+
+    .info-panel p {
+        font-size: 1.6rem;
+    }
+}

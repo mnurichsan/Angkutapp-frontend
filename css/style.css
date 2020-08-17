@@ -87,6 +87,7 @@ button.navbar-toggler {
   margin-left: 5px;
   transform: translateY(10px);
 }
+
 .show .card {
   background-color: #16a085;
   border: none;
@@ -96,6 +97,7 @@ button.navbar-toggler {
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
+
 .card .btn-circle {
   width: 30px;
   height: 30px;
@@ -106,6 +108,7 @@ button.navbar-toggler {
   border-radius: 15px;
   background-color: white;
 }
+
 .card .btn-circle.btn-lg {
   width: 50px;
   height: 50px;
@@ -134,6 +137,7 @@ button.navbar-toggler {
   border: 1px solid #16a085;
   background-color: white;
 }
+
 .driver .profile-card-2 .profile {
   border-radius: 50%;
   position: absolute;
@@ -144,10 +148,12 @@ button.navbar-toggler {
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
 }
+
 .driver .profile-card-2 h5 {
   font-weight: 600;
   color: #16a085;
 }
+
 .driver .profile-card-2 h6 {
   margin-top: -8px;
   font-weight: 600;
@@ -160,6 +166,7 @@ button.navbar-toggler {
   border: 1px solid;
   color: #16a085;
 }
+
 .driver .profile-card-2 .card-text {
   font-weight: 300;
   font-size: 15px;
@@ -171,6 +178,7 @@ button.navbar-toggler {
   color: var(--green);
   font-weight: 550;
 }
+
 .question hr {
   width: 50%;
   border: 1px solid;
@@ -214,6 +222,7 @@ button.navbar-toggler {
   .show .card {
     width: 100% !important;
   }
+
   .show p {
     font-size: 14px;
   }
@@ -225,10 +234,12 @@ button.navbar-toggler {
   margin-top: 100px;
   background: white;
 }
+
 .jumbotron p {
   font-size: 20px;
   color: var(--green);
 }
+
 .jumbotron .form-group {
   margin: -10px auto;
   background-color: #e9eceb;
@@ -276,10 +287,12 @@ button.navbar-toggler {
 .content {
   margin-top: -20px;
 }
+
 .card-deck {
   margin-top: 20px;
   margin-right: 3rem;
 }
+
 .card-deck .card {
   border-radius: 25px;
   height: 13rem;
@@ -290,11 +303,13 @@ button.navbar-toggler {
   color: var(--green);
   font-weight: 600;
 }
+
 .content .card-body p {
   color: rgba(0, 0, 0, 0.7);
   font-size: 15px;
   font-weight: bold;
 }
+
 .content .isuLainnya {
   margin-top: 2rem;
   border-left: 2px solid var(--green);
@@ -343,19 +358,19 @@ button.navbar-toggler {
   outline-color: rgb(169, 169, 169);
 }
 
-.form-area .single-form input:focus + label,
-.form-area .single-form input:valid + label,
-.form-area .single-form textarea:focus + label,
-.form-area .single-form textarea:valid + label {
+.form-area .single-form input:focus+label,
+.form-area .single-form input:valid+label,
+.form-area .single-form textarea:focus+label,
+.form-area .single-form textarea:valid+label {
   color: var(--green);
   font-size: 0.9rem;
   top: -10px;
 }
 
-.form-area .single-form input:focus + label:after,
-.form-area .single-form input:valid + label:after,
-.form-area .single-form textarea:focus + label:after,
-.form-area .single-form textarea:valid + label:after {
+.form-area .single-form input:focus+label:after,
+.form-area .single-form input:valid+label:after,
+.form-area .single-form textarea:focus+label:after,
+.form-area .single-form textarea:valid+label:after {
   content: " ";
 }
 
@@ -384,6 +399,7 @@ button.navbar-toggler {
   display: inline-block;
   font-size: 15px;
 }
+
 .form-area button:hover {
   background: #036635;
   transition: 0.4s;
@@ -424,188 +440,23 @@ button.navbar-toggler {
 
 /* akhir page pusat bantuan */
 
-/* halaman utama */
-
-section.layanan {
-  margin-top: 20px;
-}
-
-.layanan .container {
-  padding-top: 20px;
-}
-
-.layanan h1 {
-  color: var(--green);
-  font-size: 20px;
-  font-weight: 600;
-}
-.layanan hr {
-  border: 1px solid var(--green);
-  width: 120px;
-}
-
-.layanan picture {
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.layanan img {
-  width: 200px;
-  height: 160px;
-  margin-bottom: 20px;
-  border-radius: 20px;
-}
-
-section.pilar-angkut {
-  margin-top: 35px;
-  padding: 25px;
-}
-
-.pilar-angkut h1 {
-  color: var(--green);
-  font-size: 20px;
-  font-weight: 600;
-}
-.pilar-angkut hr {
-  border: 1px solid #16a085;
-  width: 120px;
-}
-
-.pilar-angkut img {
-  width: 172px;
-  height: 134px;
-  border-radius: 50%;
-  margin-top: 50px;
-}
-
-.pilar-angkut h4 {
-  color: var(--green);
-  padding-top: 20px;
-  font-weight: 600;
-}
-
-.pilar-angkut p {
-  color: var(--green);
-  font-size: 15px;
-}
-
-.testimonial {
-  margin-top: 50px;
-}
-
-.testimonial h1 {
-  color: var(--green);
-  font-size: 20px;
-  font-weight: 600;
-}
-.testimonial hr {
-  border: 1px solid var(--green);
-  width: 120px;
-}
-
-.testimonial .card {
-  width: 18rem;
-  margin: 40px auto;
-  border: 2px solid #16a085;
-}
-
-.testimonial .card .user-img img {
-  max-width: 120px;
-  height: 7rem;
-  position: absolute;
-  margin: 10px auto;
-  top: -50px;
-  left: 34%;
-  border-radius: 50%;
-  border: 3px solid #16a085;
-  -webkit-transform: translate(-10%, 0%);
-  transform: translate(-10%, 0%);
-}
-
-.testimonial .card .card-body h2 {
-  color: #16a085;
-  text-align: center;
-  font-size: 25px;
-  margin-top: 80px;
-}
-
-.testimonial .card .card-body h3 {
-  font-weight: 300;
-  font-size: 14px;
-  text-align: center;
-  color: #16a085;
-}
-
-.testimonial .card .card-body hr {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: -1px;
-}
-
-.testimonial .card .card-body p {
-  text-align: center;
-  color: #16a085;
-  font-size: 12px;
-}
-
-/* akhir halaman utama */
-
 @media (min-width: 768px) {
   .jumbotron {
     margin-top: 60px;
     background: white;
   }
 }
+
 @media (min-width: 992px) {
-  /* hlmnUtama */
-  .layanan h1 {
-    font-size: 25px;
-  }
-
-  .layanan picture {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .layanan img {
-    width: 220px;
-    height: 160px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-  }
-
-  .pilar-angkut h1 {
-    font-size: 25px;
-  }
-
-  .pilar-angkut h4 {
-    font-size: 20px;
-  }
-
-  .pilar-angkut p {
-    font-size: 14px;
-    font-weight: 400;
-  }
-
-  .pilar-angkut img {
-    margin-top: 20px;
-  }
-
-  .testimonial h1 {
-    font-size: 25px;
-  }
-
-  /* akhir */
   .jumbotron {
     margin-top: 60px;
     background: white;
   }
+
   .jumbotron p {
     font-size: 24px;
   }
+
   .form-group .form-input {
     font-size: 16px;
   }
@@ -614,6 +465,7 @@ section.pilar-angkut {
   .content {
     margin-top: -38px;
   }
+
   .content .card-deck {
     margin-top: 20px;
     margin-right: 3rem;
@@ -623,9 +475,11 @@ section.pilar-angkut {
     font-size: 22px;
     font-weight: 600;
   }
+
   .content p {
     font-size: 15px;
   }
+
   .content .isuLainnya {
     margin-top: 6px;
     margin-left: -50px;
@@ -637,15 +491,18 @@ section.pilar-angkut {
   .bantuan h1 {
     font-size: 27px;
   }
+
   .bantuan .b-hp {
     border-left: 2px solid var(--green);
     height: 26rem;
     padding-left: 15px;
     margin-top: -4px;
   }
+
   .bantuan .b-hp picture {
     margin-left: 65px;
   }
+
   .bantuan picture img {
     margin-top: 5px;
     width: 150px;
@@ -669,9 +526,11 @@ section.pilar-angkut {
   margin-top: 100px;
   background: white;
 }
+
 .jumbotron-post .jumbotron h1 {
   color: var(--green);
 }
+
 .jumbotron-post .jumbotron .form-group {
   margin: -10px auto;
   background-color: lightgrey;
@@ -721,13 +580,16 @@ section.pilar-angkut {
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   background-color: #16a085;
 }
+
 .search .card-title {
   color: white;
 }
+
 .aside h3 {
   font-weight: 600;
   color: #16a085;
 }
+
 .post h2 {
   font-weight: 600;
   color: #16a085;
@@ -740,15 +602,18 @@ section.pilar-angkut {
   position: relative;
   margin-left: -30px;
 }
+
 .footer h3,
 .footer h1 {
   color: rgb(255, 255, 255);
   font-weight: 700;
 }
+
 .footer p {
   color: rgb(224, 224, 224);
   font-weight: 500;
 }
+
 .footer .nav-footer {
   color: rgb(224, 224, 224);
 }
@@ -756,6 +621,7 @@ section.pilar-angkut {
 .footer-top picture {
   display: flex;
 }
+
 .footer .footer-top img {
   width: 10rem;
   border-radius: 15px;
@@ -766,6 +632,7 @@ section.pilar-angkut {
 .footer .footer-item {
   line-height: 2rem;
 }
+
 .footer .footer-item:hover {
   transform: translateX(5px);
   transition: 0.5s;
@@ -828,6 +695,7 @@ section.pilar-angkut {
     list-style: none;
     margin-left: -25px;
   }
+
   .footer .footer-item:hover {
     transform: unset;
   }
@@ -844,6 +712,7 @@ section.pilar-angkut {
 .detail {
   margin-top: 100px;
 }
+
 .detailSearch .form-group {
   background-color: #f0f0f0;
 }
