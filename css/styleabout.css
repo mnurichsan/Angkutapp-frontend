@@ -69,7 +69,7 @@ button.navbar-toggler {
 .jumbotron {
     padding: 5rem 2rem;
     margin-top: 13%;
-    background: #eaeaea !important;
+    background: #16a0841a !important;
 }
 
 .jumbotron .display-4 {
@@ -108,6 +108,10 @@ button.navbar-toggler {
     font-size: 1.3rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.7);
+}
+
+.info {
+    background: #16a0841a;
 }
 
 .info h1 {
@@ -164,6 +168,135 @@ button.navbar-toggler {
     padding: .8rem;
 }
 
+/* section tim */
+
+.tim {
+    padding-bottom: 20rem;
+}
+
+.tim h1 {
+    text-align: center;
+    color: var(--green);
+}
+
+.tim hr {
+    width: 15%;
+    margin: auto;
+    border: 1px solid var(--green);
+}
+
+
+.tim img {
+    width: 13%;
+    clip-path: circle(50%);
+    padding-right: 2rem;
+}
+
+.tim .img2 {
+    transform: translateY(4rem);
+}
+
+.tim .img3 {
+    transform: translateY(8rem);
+}
+
+.tim .img4 {
+    transform: translateY(12rem);
+}
+
+.tim .img5 {
+    transform: translateY(8rem);
+}
+
+.tim .img6 {
+    transform: translateY(4rem);
+}
+
+/* footer */
+.footer {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background: #367c6d;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+.footer h3,
+.footer h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+.footer p {
+    color: rgb(224, 224, 224);
+    font-weight: 500;
+}
+
+.footer .nav-footer {
+    color: rgb(224, 224, 224);
+}
+
+.footer-top picture {
+    display: flex;
+}
+
+.footer .footer-top img {
+    width: 15rem;
+    padding-right: 10px;
+    opacity: 0.9;
+}
+
+.footer .footer-item {
+    line-height: 3rem;
+}
+
+.nav-footer a {
+    color: rgb(224, 224, 224);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.sosmed .nav-footer {
+    list-style: none;
+    display: inline-block;
+}
+
+.sosmed-item {
+    display: inline;
+    margin-right: 5px;
+}
+
+.sosmed-link {
+    border: 1px solid rgba(255, 255, 255, 1);
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 9px;
+}
+
+.sosmed-item .fa-instagram,
+.sosmed-item .fa-facebook-square,
+.sosmed-item .fa-youtube,
+.sosmed-item .fa-twitter-square {
+    font-size: 1.6rem;
+    line-height: unset;
+}
+
+.footer-top .driver {
+    padding-top: 1rem;
+}
+
+.footer-bottom hr {
+    margin-top: 4rem;
+    width: 100%;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+.footer-bottom p {
+    color: rgb(211, 211, 211);
+}
+
+
 @media (min-width: 992px) {
     .nav-link {
         margin-right: 30px;
@@ -212,11 +345,11 @@ button.navbar-toggler {
 
     .main h2 {
         color: var(--green);
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .main h3 {
-        font-size: 2.3rem;
+        font-size: 2.7rem;
         color: var(--green);
         line-height: 1;
     }
@@ -268,5 +401,44 @@ button.navbar-toggler {
 
     .info-panel p {
         font-size: 1.6rem;
+    }
+
+    .tim h1 {
+        font-size: 4rem;
+    }
+
+    .tim hr {
+        width: 20%;
+    }
+
+    /* footer */
+    .footer h3,
+    .footer h1 {
+        font-size: 2.8rem;
+    }
+
+    .footer p {
+        font-size: 1.7rem;
+    }
+
+    .footer .footer-item {
+        line-height: 2.5rem;
+    }
+
+    .footer .footer-item:hover {
+        transform: translateX(5px);
+        transition: 0.5s;
+    }
+
+    .nav-footer a {
+        font-size: 1.5rem;
+    }
+
+    .sosmed-item .fa-instagram,
+    .sosmed-item .fa-facebook-square,
+    .sosmed-item .fa-youtube,
+    .sosmed-item .fa-twitter-square {
+        font-size: 2rem;
+        transform: translateY(.1rem);
     }
 }
