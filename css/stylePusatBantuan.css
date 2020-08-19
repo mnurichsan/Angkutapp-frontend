@@ -157,7 +157,24 @@ section.faq-penumpang {
     background: #16a0841a;
 }
 
+section.faq-penumpang h1 {
+    margin-bottom: 3rem;
+}
 
+#accordion {
+    width: 60%;
+}
+
+.card {
+    padding-bottom: 2rem;
+}
+
+.card-header .card-link {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* faq driver */
 
 /* footer */
 .footer {
