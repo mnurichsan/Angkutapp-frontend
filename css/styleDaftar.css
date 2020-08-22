@@ -125,7 +125,7 @@ button.navbar-toggler {
   margin-top: 1.8rem;
 }
 
-/* daftar */
+/* daftar offline */
 section.daftar {
   margin-top: 4rem;
 }
@@ -152,70 +152,40 @@ section.daftar {
   margin-top: 5.7rem;
 }
 
-.daftar .petunjuk {
-  position: relative;
-  left: 2rem;
-}
-
-.daftar .petunjuk p {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.8);
-  margin-top: -1rem;
-}
-
-.daftar .petunjuk span {
-  position: absolute;
-  display: block;
-  background-color: var(--green);
-  border-radius: 50%;
-  width: 3.5rem;
-  height: 3.5rem;
-  text-align: center;
-  line-height: 3rem;
-  left: 13rem;
-  margin-top: 0.1rem;
-  color: white;
-}
-
-.cara-daftar .petunjuk::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-left: 3px solid var(--green);
-  height: 25rem;
-  top: 1rem;
-  left: 14.7rem;
-  z-index: -99;
-}
-
-.petunjuk span.p-2 {
-  transform: translateY(2rem);
-  line-height: 2rem;
-}
-
-.petunjuk span.p-4 {
-  transform: translateY(2rem);
-  line-height: 0.2rem;
-}
 
 .cara-daftar img {
-  width: 33%;
+  width: 35%;
   float: left;
-  margin-right: 30px;
+  margin-right: 5rem;
 }
 
-.cara-daftar::after {
+.cara-daftar .cara-daftar::after {
   content: "";
   clear: both;
 }
 
-.cara-daftar .petunjuk {
-  color: black;
-  background: unset !important;
-  line-height: 3.8rem;
+.petunjuk {
+  position: relative;
+
 }
 
+.petunjuk span {
+  position: absolute;
+  display: inline-block;
+  background: var(--green);
+  margin-left: -3.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.petunjuk p {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+/* form daftar */
 .form-daftar {
   border: 2px solid var(--green);
   padding: 20px;
@@ -430,41 +400,6 @@ input[type="number"]:focus,
     margin-right: 1rem;
   }
 
-  .daftar .petunjuk {
-    left: 5rem;
-    top: -1rem;
-  }
-
-  .daftar .petunjuk p {
-    font-size: 0.9rem;
-    margin-top: -2.5rem;
-    line-height: 4.6;
-  }
-
-  .daftar .petunjuk span {
-    width: 10%;
-    height: 10%;
-    line-height: 2rem;
-    left: 8rem;
-    margin-top: 0.7rem;
-  }
-
-  .cara-daftar .petunjuk::after {
-    height: 23rem;
-    top: 1.5rem;
-    left: 9.3rem;
-    z-index: -99;
-  }
-
-  .petunjuk span.p-2 {
-    transform: translateY(2rem);
-    line-height: 1.5rem;
-  }
-
-  .petunjuk span.p-4 {
-    line-height: 0.1;
-  }
-
   .form-daftar {
     margin: auto;
   }
@@ -495,43 +430,6 @@ input[type="number"]:focus,
   .cara-daftar img {
     width: 30%;
     margin-right: 1.8rem;
-  }
-
-  .daftar .petunjuk {
-    left: 2.5rem;
-    top: -1rem;
-  }
-
-  .daftar .petunjuk p {
-    font-size: 0.9rem;
-    margin-top: -2.5rem;
-    line-height: 4.6;
-  }
-
-  .daftar .petunjuk span {
-    width: 3.5rem;
-    height: 3.5rem;
-    text-align: center;
-    line-height: 3.5rem;
-    left: 8rem;
-    margin-top: 0.7rem;
-  }
-
-  .cara-daftar .petunjuk::after {
-    height: 18rem;
-    top: 1.5rem;
-    left: 9.7rem;
-    z-index: -99;
-  }
-
-  .petunjuk span.p-2 {
-    transform: translateY(1.5rem);
-    line-height: 2rem;
-  }
-
-  .petunjuk span.p-4 {
-    transform: translateY(2rem);
-    line-height: 0.1rem;
   }
 
   .form-daftar {
@@ -613,41 +511,23 @@ input[type="number"]:focus,
     margin-top: 6rem;
   }
 
-  .daftar .petunjuk {
+  .cara-daftar img {
+    width: 30% !important;
+    margin-right: 5rem !important;
+  }
+
+  .petunjuk {
     position: relative;
-    left: 6rem;
-    top: 0;
+
   }
 
-  .daftar .petunjuk p {
-    font-size: 1.5rem;
-    line-height: 4;
-  }
-
-  .daftar .petunjuk span {
-    border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
-    text-align: center;
-    line-height: 4rem;
-    left: 18rem;
-    margin-top: 1rem;
-  }
-
-  .cara-daftar .petunjuk::after {
-    height: 38rem;
-    top: 2rem;
-    left: 19.8rem;
-  }
-
-  .petunjuk span.p-2 {
-    transform: translateY(3rem);
+  .petunjuk span {
     line-height: 3rem;
   }
 
-  .petunjuk span.p-4 {
-    transform: translateY(3rem);
-    line-height: 1rem;
+  .petunjuk p {
+    font-size: 1.5rem;
+    line-height: 2.4;
   }
 
   .cara-daftar img {
@@ -679,7 +559,7 @@ input[type="number"]:focus,
   }
 
   .barcode p.ios {
-    margin-left: 5rem;
+    margin-left: 4rem;
   }
 
   .mobile {
@@ -694,7 +574,7 @@ input[type="number"]:focus,
     width: 0.5rem;
     background-color: var(--green);
     top: -2rem;
-    left: -13rem;
+    left: -11rem;
   }
 
   /* footer */
